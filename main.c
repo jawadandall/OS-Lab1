@@ -31,7 +31,7 @@ int main() {
   list_print(mylist);
 
   //Edited test string from "->7" to "->80" to reflect remove at index 3 (0|100, 1|90, 2|80, 3|70)
-  if(strcmp("100->90->80->60->50->40->30->20->10->NULL",listToString(mylist)) != 0)
+  if(strcmp("100->90->70->60->50->40->30->20->10->NULL",listToString(mylist)) != 0)
   {
         printf("list_remove_at_index : FAILED\n");
   }
@@ -43,7 +43,7 @@ int main() {
   list_remove_at_index(mylist, 6);
   list_print(mylist);
 
-  if(strcmp("100->80->60->50->40->30->10->NULL",listToString(mylist)) != 0)
+  if(strcmp("90->70->60->50->40->20->10->NULL",listToString(mylist)) != 0)
   {
         printf("list_remove_at_index : FAILED\n");
   }
